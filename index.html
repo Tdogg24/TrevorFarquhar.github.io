@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor Farquhar Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/0131baa700.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Trevor</span><br>Farquhar From Canada</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------about------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/macewan.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>My name is Trevor Farquhar, I am a second year student completing a Bachelor of Science majoring in Computer Science at MacEwan University.
+                    I have a passion for learning all things technology, from basic programs to large scale projects where teamwork is vital for success.
+                    Being from Canada, winter takes up a large portion of the year. I have been snowboarding for nearly 12 years, and in that time have recieved
+                    a CASI level 1 certification for instructing where I have been teaching large groups of individuals the basics and progression system for maximizing their 
+                    abilities over the past 4 years.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Confident Languages:</span><br>Python, C</li>
+                        <li><span>Familiar Languages:</span><br>Java, HTML, CSS</li>
+                        <li><span>Technical Skills:</span><br>Git, GitHub, Microsoft Office, Windows, Linux, Mac</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Science in Computer science</span><br>Expected Graduation: April 2026</li>
+                        <li><span>First Class Academic Standing:</span><br>GPA 3.522/4</li>
+                        <li><span>Related Coursework:</span><br>Data Structures and Algorithms, Practical Programming Methodology, Linear Algebra, Calculus I</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------Services--------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python</h2>
+                <p>Confident skills and ability to construct complex programs and applications with the Python programming language.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-memory"></i>
+                <h2>C</h2>
+                <p>Well developed ability to program safely and effectivly in a low level language such as C where memory management is important.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>Quality Assurance and Testing</h2>
+                <p>Demonstrates thorough understanding for importance of quality, and maintainability of small and large scale programs.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.PNG">
+                <div class="layer">
+                    <h3>Ice Breaker Game</h3>
+                    <p>A game where 2 players alternate turns moving and attempting to trap the opponent with broken ice. 
+                        Made in Python using a graphical library called graphics.py</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.PNG">
+                <div class="layer">
+                    <h3>eReader</h3>
+                    <p>A Hackathon project created to learn more about the process of creating a full application with a team. 
+                        This eReader scrapes a website that holds publicly available free books and texts and saves them to an application where 
+                        they are stored and available for reading at anytime entirely through the application
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.PNG">
+                <div class="layer">
+                    <h3>Binary Search Tree Data Sorter</h3>
+                    <p>A program that reads in a file and stores it in a Binary Search Tree where this data can be searched, sorted 
+                        and more using various functions special to the program</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>trevorfarquhar2003@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>(587) 599 6236</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/trevor-farquhar-908b42256/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Tdogg24"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="cv.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
